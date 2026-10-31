@@ -67,44 +67,6 @@ Key software engineering concepts include:
 | Development Tools | Visual Studio Code, Git, GitHub |
 | System Concepts | Sensor Simulation, Safety Monitoring, Alert Classification |
 
-## System Architecture
-
-The simulation follows a structured processing workflow:
-
-```text
-          SIMULATED SENSOR INPUTS
-                    |
-      +-------------+-------------+
-      |             |             |
-  IR Presence   Ultrasonic    Bio-Signal
-      |           Distance      Flag
-      +-------------+-------------+
-                    |
-                    v
-           SensorReading Model
-                    |
-                    v
-            Safety Monitoring
-               Algorithm
-                    |
-                    v
-           Severity Evaluation
-                    |
-          +---------+---------+
-          |         |         |
-        GREEN     YELLOW     RED
-          |         |         |
-       Normal    Warning   Critical
-          |         |         |
-          +---------+---------+
-                    |
-                    v
-             Alert Logging
-                    |
-                    v
-        Simulated Security Alert
-```
-
 ## Example Simulation Results
 
 The application demonstrates four example station-monitoring scenarios using predefined sensor readings.
